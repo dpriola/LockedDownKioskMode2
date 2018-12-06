@@ -48,6 +48,7 @@ namespace LockedDownKioskMode
             this.LDBButton.Size = new System.Drawing.Size(300, 300);
             this.LDBButton.TabIndex = 0;
             this.LDBButton.UseVisualStyleBackColor = true;
+            this.LDBButton.Click += new System.EventHandler(this.LDBButton_Click);
             // 
             // WebAdvisorButton
             // 
@@ -56,6 +57,7 @@ namespace LockedDownKioskMode
             this.WebAdvisorButton.Size = new System.Drawing.Size(300, 300);
             this.WebAdvisorButton.TabIndex = 1;
             this.WebAdvisorButton.UseVisualStyleBackColor = true;
+            this.WebAdvisorButton.Click += new System.EventHandler(this.WebAdvisorButton_Click);
             // 
             // D2LButton
             // 
@@ -64,6 +66,7 @@ namespace LockedDownKioskMode
             this.D2LButton.Size = new System.Drawing.Size(300, 300);
             this.D2LButton.TabIndex = 2;
             this.D2LButton.UseVisualStyleBackColor = true;
+            this.D2LButton.Click += new System.EventHandler(this.D2LButton_Click);
             // 
             // WebMailButton
             // 
@@ -72,6 +75,7 @@ namespace LockedDownKioskMode
             this.WebMailButton.Size = new System.Drawing.Size(300, 300);
             this.WebMailButton.TabIndex = 3;
             this.WebMailButton.UseVisualStyleBackColor = true;
+            this.WebMailButton.Click += new System.EventHandler(this.WebMailButton_Click);
             // 
             // DSUStudentHomeButton
             // 
@@ -80,6 +84,7 @@ namespace LockedDownKioskMode
             this.DSUStudentHomeButton.Size = new System.Drawing.Size(150, 150);
             this.DSUStudentHomeButton.TabIndex = 4;
             this.DSUStudentHomeButton.UseVisualStyleBackColor = true;
+            this.DSUStudentHomeButton.Click += new System.EventHandler(this.DSUStudentHomeButton_Click);
             // 
             // ProctorSignUpButton
             // 
@@ -88,6 +93,7 @@ namespace LockedDownKioskMode
             this.ProctorSignUpButton.Size = new System.Drawing.Size(150, 150);
             this.ProctorSignUpButton.TabIndex = 5;
             this.ProctorSignUpButton.UseVisualStyleBackColor = true;
+            this.ProctorSignUpButton.Click += new System.EventHandler(this.ProctorSignUpButton_Click);
             // 
             // CalcButton
             // 
@@ -96,6 +102,7 @@ namespace LockedDownKioskMode
             this.CalcButton.Size = new System.Drawing.Size(150, 150);
             this.CalcButton.TabIndex = 6;
             this.CalcButton.UseVisualStyleBackColor = true;
+            this.CalcButton.Click += new System.EventHandler(this.CalcButton_Click);
             // 
             // DefaultPrinterButton
             // 
@@ -104,6 +111,7 @@ namespace LockedDownKioskMode
             this.DefaultPrinterButton.Size = new System.Drawing.Size(150, 150);
             this.DefaultPrinterButton.TabIndex = 7;
             this.DefaultPrinterButton.UseVisualStyleBackColor = true;
+            this.DefaultPrinterButton.Click += new System.EventHandler(this.DefaultPrinterButton_Click);
             // 
             // AdminLogOutButton
             // 
@@ -112,6 +120,7 @@ namespace LockedDownKioskMode
             this.AdminLogOutButton.Size = new System.Drawing.Size(150, 150);
             this.AdminLogOutButton.TabIndex = 8;
             this.AdminLogOutButton.UseVisualStyleBackColor = true;
+            this.AdminLogOutButton.Click += new System.EventHandler(this.AdminLogOutButton_Click);
             // 
             // Form1
             // 
