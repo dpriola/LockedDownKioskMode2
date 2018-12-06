@@ -71,7 +71,6 @@
             this.PrinterListBox.Name = "PrinterListBox";
             this.PrinterListBox.Size = new System.Drawing.Size(315, 355);
             this.PrinterListBox.TabIndex = 4;
-            this.PrinterListBox.SelectedIndexChanged += new System.EventHandler(this.PrinterListBox_SelectedIndexChanged);
             // 
             // DefaultPrinter
             // 
