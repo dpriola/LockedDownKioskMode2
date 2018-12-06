@@ -15,6 +15,7 @@ namespace LockedDownKioskMode
         public Form1()
         {
             InitializeComponent();
+            
         }
     }
 }
