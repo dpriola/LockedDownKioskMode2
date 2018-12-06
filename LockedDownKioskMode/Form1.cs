@@ -15,6 +15,7 @@ namespace LockedDownKioskMode
     {
         //Global Variables Here
         ProcessStartInfo URL;
+        ProcessStartInfo Program;
 
         public Form1()
         {
@@ -24,7 +25,8 @@ namespace LockedDownKioskMode
 
         private void LDBButton_Click(object sender, EventArgs e)
         {
-
+            Program = new ProcessStartInfo("C:\\Program Files (x86)\\Respondus\\LockDown Browser\\LockDownBrowser.exe");
+            Process.Start(Program);
         }
 
         private void WebAdvisorButton_Click(object sender, EventArgs e)
@@ -59,12 +61,13 @@ namespace LockedDownKioskMode
 
         private void CalcButton_Click(object sender, EventArgs e)
         {
-
+            Program = new ProcessStartInfo("C:\\Windows\\WinSxS\\amd64_microsoft-windows-calc_31bf3856ad364e35_10.0.16299.15_none_ccaa2d2d8be06b27\\calc.exe");
+            Process.Start(Program);
         }
 
         private void DefaultPrinterButton_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void AdminLogOutButton_Click(object sender, EventArgs e)
