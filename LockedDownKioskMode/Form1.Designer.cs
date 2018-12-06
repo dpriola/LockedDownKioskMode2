@@ -30,123 +30,103 @@ namespace LockedDownKioskMode
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.LDBButton = new System.Windows.Forms.Button();
+            this.WebAdvisorButton = new System.Windows.Forms.Button();
+            this.D2LButton = new System.Windows.Forms.Button();
+            this.WebMailButton = new System.Windows.Forms.Button();
+            this.DSUStudentHomeButton = new System.Windows.Forms.Button();
+            this.ProctorSignUpButton = new System.Windows.Forms.Button();
+            this.CalcButton = new System.Windows.Forms.Button();
+            this.DefaultPrinterButton = new System.Windows.Forms.Button();
+            this.AdminLogOutButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // LDBButton
             // 
-            this.button1.Location = new System.Drawing.Point(50, 150);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 300);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.LDBButton.Location = new System.Drawing.Point(50, 150);
+            this.LDBButton.Name = "LDBButton";
+            this.LDBButton.Size = new System.Drawing.Size(300, 300);
+            this.LDBButton.TabIndex = 0;
+            this.LDBButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // WebAdvisorButton
             // 
-            this.button2.Location = new System.Drawing.Point(400, 150);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(300, 300);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.WebAdvisorButton.Location = new System.Drawing.Point(400, 150);
+            this.WebAdvisorButton.Name = "WebAdvisorButton";
+            this.WebAdvisorButton.Size = new System.Drawing.Size(300, 300);
+            this.WebAdvisorButton.TabIndex = 1;
+            this.WebAdvisorButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // D2LButton
             // 
-            this.button3.Location = new System.Drawing.Point(750, 150);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(300, 300);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.D2LButton.Location = new System.Drawing.Point(750, 150);
+            this.D2LButton.Name = "D2LButton";
+            this.D2LButton.Size = new System.Drawing.Size(300, 300);
+            this.D2LButton.TabIndex = 2;
+            this.D2LButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // WebMailButton
             // 
-            this.button4.Location = new System.Drawing.Point(1100, 150);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(300, 300);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.WebMailButton.Location = new System.Drawing.Point(1100, 150);
+            this.WebMailButton.Name = "WebMailButton";
+            this.WebMailButton.Size = new System.Drawing.Size(300, 300);
+            this.WebMailButton.TabIndex = 3;
+            this.WebMailButton.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // DSUStudentHomeButton
             // 
-            this.button5.Location = new System.Drawing.Point(50, 540);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 150);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.DSUStudentHomeButton.Location = new System.Drawing.Point(50, 540);
+            this.DSUStudentHomeButton.Name = "DSUStudentHomeButton";
+            this.DSUStudentHomeButton.Size = new System.Drawing.Size(150, 150);
+            this.DSUStudentHomeButton.TabIndex = 4;
+            this.DSUStudentHomeButton.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // ProctorSignUpButton
             // 
-            this.button6.Location = new System.Drawing.Point(300, 540);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(150, 150);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.ProctorSignUpButton.Location = new System.Drawing.Point(350, 540);
+            this.ProctorSignUpButton.Name = "ProctorSignUpButton";
+            this.ProctorSignUpButton.Size = new System.Drawing.Size(150, 150);
+            this.ProctorSignUpButton.TabIndex = 5;
+            this.ProctorSignUpButton.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // CalcButton
             // 
-            this.button7.Location = new System.Drawing.Point(550, 540);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(150, 150);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.CalcButton.Location = new System.Drawing.Point(650, 540);
+            this.CalcButton.Name = "CalcButton";
+            this.CalcButton.Size = new System.Drawing.Size(150, 150);
+            this.CalcButton.TabIndex = 6;
+            this.CalcButton.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // DefaultPrinterButton
             // 
-            this.button8.Location = new System.Drawing.Point(750, 540);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(150, 150);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.DefaultPrinterButton.Location = new System.Drawing.Point(950, 540);
+            this.DefaultPrinterButton.Name = "DefaultPrinterButton";
+            this.DefaultPrinterButton.Size = new System.Drawing.Size(150, 150);
+            this.DefaultPrinterButton.TabIndex = 7;
+            this.DefaultPrinterButton.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // AdminLogOutButton
             // 
-            this.button9.Location = new System.Drawing.Point(1000, 540);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(150, 150);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(1250, 540);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(150, 150);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.AdminLogOutButton.Location = new System.Drawing.Point(1250, 540);
+            this.AdminLogOutButton.Name = "AdminLogOutButton";
+            this.AdminLogOutButton.Size = new System.Drawing.Size(150, 150);
+            this.AdminLogOutButton.TabIndex = 8;
+            this.AdminLogOutButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1439, 702);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AdminLogOutButton);
+            this.Controls.Add(this.DefaultPrinterButton);
+            this.Controls.Add(this.CalcButton);
+            this.Controls.Add(this.ProctorSignUpButton);
+            this.Controls.Add(this.DSUStudentHomeButton);
+            this.Controls.Add(this.WebMailButton);
+            this.Controls.Add(this.D2LButton);
+            this.Controls.Add(this.WebAdvisorButton);
+            this.Controls.Add(this.LDBButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -155,16 +135,15 @@ namespace LockedDownKioskMode
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button LDBButton;
+        private System.Windows.Forms.Button WebAdvisorButton;
+        private System.Windows.Forms.Button D2LButton;
+        private System.Windows.Forms.Button WebMailButton;
+        private System.Windows.Forms.Button DSUStudentHomeButton;
+        private System.Windows.Forms.Button ProctorSignUpButton;
+        private System.Windows.Forms.Button CalcButton;
+        private System.Windows.Forms.Button DefaultPrinterButton;
+        private System.Windows.Forms.Button AdminLogOutButton;
 
         private void GoFullscreen(bool fullscreen)
         {
