@@ -1,0 +1,10 @@
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\bin\Debug\LockedDownKioskMode.exe.config
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\bin\Debug\LockedDownKioskMode.exe
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\bin\Debug\LockedDownKioskMode.pdb
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.csprojAssemblyReference.cache
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.Form1.resources
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.Properties.Resources.resources
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.csproj.GenerateResource.cache
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.csproj.CoreCompileInputs.cache
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.exe
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.pdb
