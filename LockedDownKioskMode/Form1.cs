@@ -67,7 +67,8 @@ namespace LockedDownKioskMode
 
         private void DefaultPrinterButton_Click(object sender, EventArgs e)
         {
-            
+            DefaultPrinter dp = new DefaultPrinter();
+            DialogResult dialogResult = dp.ShowDialog();
         }
 
         private void AdminLogOutButton_Click(object sender, EventArgs e)
