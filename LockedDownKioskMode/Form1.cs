@@ -73,7 +73,8 @@ namespace LockedDownKioskMode
 
         private void AdminLogOutButton_Click(object sender, EventArgs e)
         {
-
+            AdminLogout al = new AdminLogout();
+            DialogResult dialogResult = al.ShowDialog();
         }
     }
 }

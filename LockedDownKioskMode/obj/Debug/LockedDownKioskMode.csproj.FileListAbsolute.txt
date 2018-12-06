@@ -9,3 +9,4 @@ C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDow
 C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.exe
 C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.pdb
 C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.DefaultPrinter.resources
+C:\Users\dpriola\Documents\School\CSC 260 Object Oriented Design\Final\LockedDownKioskMode\LockedDownKioskMode\obj\Debug\LockedDownKioskMode.AdminLogout.resources
