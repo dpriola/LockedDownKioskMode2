@@ -2,7 +2,7 @@
 
 namespace LockedDownKioskMode
 {
-    partial class Form1
+    partial class KioskMode
     {
         /// <summary>
         /// Required designer variable.
@@ -122,7 +122,7 @@ namespace LockedDownKioskMode
             this.AdminLogOutButton.UseVisualStyleBackColor = true;
             this.AdminLogOutButton.Click += new System.EventHandler(this.AdminLogOutButton_Click);
             // 
-            // Form1
+            // KioskMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -136,8 +136,8 @@ namespace LockedDownKioskMode
             this.Controls.Add(this.D2LButton);
             this.Controls.Add(this.WebAdvisorButton);
             this.Controls.Add(this.LDBButton);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "KioskMode";
+            this.Text = "Kiosk Mode";
             this.ResumeLayout(false);
 
         }

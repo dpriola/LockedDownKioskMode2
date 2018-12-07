@@ -57,11 +57,17 @@
     <Compile Include="DefaultPrinter.Designer.cs">
       <DependentUpon>DefaultPrinter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="KioskMode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="KioskMode.Designer.cs">
+      <DependentUpon>KioskMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordClass.Designer.cs">
+      <DependentUpon>PasswordClass.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +78,11 @@
     <EmbeddedResource Include="DefaultPrinter.resx">
       <DependentUpon>DefaultPrinter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="KioskMode.resx">
+      <DependentUpon>KioskMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordClass.resx">
+      <DependentUpon>PasswordClass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

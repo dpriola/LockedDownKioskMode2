@@ -11,13 +11,13 @@ using System.Diagnostics;
 
 namespace LockedDownKioskMode
 {
-    public partial class Form1 : Form
+    public partial class KioskMode : Form
     {
         //Global Variables Here
         ProcessStartInfo URL;
         ProcessStartInfo Program;
 
-        public Form1()
+        public KioskMode()
         {
             InitializeComponent();
             
