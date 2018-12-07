@@ -26,6 +26,8 @@ namespace LockedDownKioskMode
         private void KioskMode_Load(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            LockDownClass LDC = new LockDownClass();
+            LDC.main();
         }
 
         private void LDBButton_Click(object sender, EventArgs e)

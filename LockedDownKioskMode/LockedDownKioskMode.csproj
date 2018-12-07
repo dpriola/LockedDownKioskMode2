@@ -63,6 +63,7 @@
     <Compile Include="KioskMode.Designer.cs">
       <DependentUpon>KioskMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="LockDownClass.cs" />
     <Compile Include="PasswordClass.cs">
       <SubType>Form</SubType>
     </Compile>
