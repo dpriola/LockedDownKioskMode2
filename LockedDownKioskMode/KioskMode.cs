@@ -23,6 +23,11 @@ namespace LockedDownKioskMode
             
         }
 
+        private void KioskMode_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
         private void LDBButton_Click(object sender, EventArgs e)
         {
             Program = new ProcessStartInfo("C:\\Program Files (x86)\\Respondus\\LockDown Browser\\LockDownBrowser.exe");
@@ -75,6 +80,27 @@ namespace LockedDownKioskMode
         {
             AdminLogout al = new AdminLogout();
             DialogResult dialogResult = al.ShowDialog();
+        }
+
+        private void ScrollingAnnouncement_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://dsu.edu/");
+
+            ScrollingAnnouncement.LinkVisited = true;
+
+            ScrollingAnnouncement.ActiveLinkColor = Color.Orange;
+            ScrollingAnnouncement.VisitedLinkColor = Color.Purple;
+            ScrollingAnnouncement.LinkColor = Color.Blue;
+            ScrollingAnnouncement.DisabledLinkColor = Color.Gray;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            ScrollingAnnouncement.Left = ScrollingAnnouncement.Left + 5;
+            if (ScrollingAnnouncement.Left + ScrollingAnnouncement.Width <= 0)
+            {
+                ScrollingAnnouncement.Left = this.Width;
+            }
         }
     }
 }

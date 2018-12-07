@@ -30,6 +30,7 @@ namespace LockedDownKioskMode
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.LDBButton = new System.Windows.Forms.Button();
             this.WebAdvisorButton = new System.Windows.Forms.Button();
             this.D2LButton = new System.Windows.Forms.Button();
@@ -39,6 +40,8 @@ namespace LockedDownKioskMode
             this.CalcButton = new System.Windows.Forms.Button();
             this.DefaultPrinterButton = new System.Windows.Forms.Button();
             this.AdminLogOutButton = new System.Windows.Forms.Button();
+            this.ScrollingAnnouncement = new System.Windows.Forms.LinkLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // LDBButton
@@ -122,11 +125,28 @@ namespace LockedDownKioskMode
             this.AdminLogOutButton.UseVisualStyleBackColor = true;
             this.AdminLogOutButton.Click += new System.EventHandler(this.AdminLogOutButton_Click);
             // 
+            // ScrollingAnnouncement
+            // 
+            this.ScrollingAnnouncement.AutoSize = true;
+            this.ScrollingAnnouncement.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScrollingAnnouncement.Location = new System.Drawing.Point(47, 72);
+            this.ScrollingAnnouncement.Name = "ScrollingAnnouncement";
+            this.ScrollingAnnouncement.Size = new System.Drawing.Size(610, 26);
+            this.ScrollingAnnouncement.TabIndex = 9;
+            this.ScrollingAnnouncement.TabStop = true;
+            this.ScrollingAnnouncement.Text = "Click Here for All the Latest Dakota State University Announcements!";
+            this.ScrollingAnnouncement.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ScrollingAnnouncement_LinkClicked);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // KioskMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1439, 702);
+            this.Controls.Add(this.ScrollingAnnouncement);
             this.Controls.Add(this.AdminLogOutButton);
             this.Controls.Add(this.DefaultPrinterButton);
             this.Controls.Add(this.CalcButton);
@@ -138,7 +158,9 @@ namespace LockedDownKioskMode
             this.Controls.Add(this.LDBButton);
             this.Name = "KioskMode";
             this.Text = "Kiosk Mode";
+            this.Load += new System.EventHandler(this.KioskMode_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -168,6 +190,9 @@ namespace LockedDownKioskMode
                 this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
             }
         }
+
+        private LinkLabel ScrollingAnnouncement;
+        private Timer timer1;
     }
 }
 
