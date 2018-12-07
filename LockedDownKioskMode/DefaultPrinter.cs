@@ -22,7 +22,7 @@ namespace LockedDownKioskMode
 
         private void CurrentDefaultButton_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void SetDefaultButton_Click(object sender, EventArgs e)
