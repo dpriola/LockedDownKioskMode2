@@ -36,7 +36,8 @@ namespace LockedDownKioskMode
 
         private void AdminLogoutButton_Click(object sender, EventArgs e)
         {
-
+            PasswordClass pc = new PasswordClass();
+            DialogResult dialogResult = pc.ShowDialog();
         }
     }
 }

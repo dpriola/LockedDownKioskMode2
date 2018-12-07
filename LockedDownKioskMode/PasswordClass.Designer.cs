@@ -28,21 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.passBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.OkButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // passBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(66, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(221, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox1.Enter += new System.EventHandler(this.OkButton_Click);
+            this.passBox.Location = new System.Drawing.Point(66, 45);
+            this.passBox.Name = "passBox";
+            this.passBox.PasswordChar = '*';
+            this.passBox.Size = new System.Drawing.Size(221, 20);
+            this.passBox.TabIndex = 0;
+            this.passBox.Enter += new System.EventHandler(this.OkButton_Click);
             // 
             // label1
             // 
@@ -82,7 +81,7 @@
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.OkButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passBox);
             this.Name = "PasswordClass";
             this.Text = "PasswordClass";
             this.ResumeLayout(false);
@@ -92,7 +91,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox passBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button OkButton;
         private System.Windows.Forms.Button CancelButton;

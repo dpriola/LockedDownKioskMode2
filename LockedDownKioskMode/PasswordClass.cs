@@ -19,17 +19,23 @@ namespace LockedDownKioskMode
 
         private void OkButton_Click(object sender, EventArgs e)
         {
-
+            if (passBox.Text == "test")
+            {
+                this.Close();
+            }
+            else if (String.IsNullOrEmpty(passBox.Text))
+            {
+                //Purposefully left Empty for Null/Empty Text field
+            }
+            else
+            {
+                MessageBox.Show("Password is Incorrect.");
+            }
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            Dispose();
         }
     }
 }
