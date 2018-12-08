@@ -17,6 +17,7 @@ namespace LockedDownKioskMode
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new KioskMode());
+            //Error being produced when pressing other Win Keys
         }
     }
 }

@@ -17,6 +17,22 @@ namespace LockedDownKioskMode
         ProcessStartInfo URL;
         ProcessStartInfo Program;
 
+        private Rectangle LDBButtonRect;
+        private Rectangle WebAdvisorButtonRect;
+        private Rectangle D2LButtonRect;
+        private Rectangle WebMailButtonRect;
+        private Rectangle DSUStudentHomeButtonRect;
+        private Rectangle ProctorSignUpButtonRect;
+        private Rectangle CalcButtonRect;
+        private Rectangle DefaultPrinterButtonRect;
+        private Rectangle AdminLogOutButtonRect;
+
+        private Rectangle BannerRect;
+
+        private Size formOriginalSize;
+
+
+
         public KioskMode()
         {
             InitializeComponent();
@@ -25,9 +41,58 @@ namespace LockedDownKioskMode
 
         private void KioskMode_Load(object sender, EventArgs e)
         {
+            formOriginalSize = this.Size;
+
+            LDBButtonRect = new Rectangle(LDBButton.Location.X, LDBButton.Location.Y, LDBButton.Width, LDBButton.Height);
+            WebAdvisorButtonRect = new Rectangle(WebAdvisorButton.Location.X, WebAdvisorButton.Location.Y, WebAdvisorButton.Width, WebAdvisorButton.Height);
+            D2LButtonRect = new Rectangle(D2LButton.Location.X, D2LButton.Location.Y, D2LButton.Width, D2LButton.Height);
+            WebMailButtonRect = new Rectangle(WebMailButton.Location.X, WebMailButton.Location.Y, WebMailButton.Width, WebMailButton.Height);
+            DSUStudentHomeButtonRect = new Rectangle(DSUStudentHomeButton.Location.X, DSUStudentHomeButton.Location.Y, DSUStudentHomeButton.Width, DSUStudentHomeButton.Height);
+            ProctorSignUpButtonRect = new Rectangle(ProctorSignUpButton.Location.X, ProctorSignUpButton.Location.Y, ProctorSignUpButton.Width, ProctorSignUpButton.Height);
+            CalcButtonRect = new Rectangle(CalcButton.Location.X, CalcButton.Location.Y, CalcButton.Width, CalcButton.Height);
+            DefaultPrinterButtonRect = new Rectangle(DefaultPrinterButton.Location.X, DefaultPrinterButton.Location.Y, DefaultPrinterButton.Width, DefaultPrinterButton.Height);
+            AdminLogOutButtonRect = new Rectangle(AdminLogOutButton.Location.X, AdminLogOutButton.Location.Y, AdminLogOutButton.Width, AdminLogOutButton.Height);
+
+            BannerRect = new Rectangle(ScrollingAnnouncement.Location.X, ScrollingAnnouncement.Location.Y, ScrollingAnnouncement.Width, ScrollingAnnouncement.Height);
+
             timer1.Enabled = true;
             LockDownClass LDC = new LockDownClass();
             LDC.main();
+        }
+
+        private void ResizeChildrenControls()
+        {
+            ResizeControl(LDBButtonRect, LDBButton);
+            ResizeControl(WebAdvisorButtonRect, WebAdvisorButton);
+            ResizeControl(D2LButtonRect, D2LButton);
+            ResizeControl(WebMailButtonRect, WebMailButton);
+            ResizeControl(DSUStudentHomeButtonRect, DSUStudentHomeButton);
+            ResizeControl(ProctorSignUpButtonRect, ProctorSignUpButton);
+            ResizeControl(CalcButtonRect, CalcButton);
+            ResizeControl(DefaultPrinterButtonRect, DefaultPrinterButton);
+            ResizeControl(AdminLogOutButtonRect, AdminLogOutButton);
+
+            ResizeControl(BannerRect, ScrollingAnnouncement);
+        }
+
+        private void ResizeControl(Rectangle originalControlRect, Control control)
+        {
+            float xRatio = (float)(this.Width) / (float)(formOriginalSize.Width);
+            float yRatio = (float)(this.Height) / (float)(formOriginalSize.Height);
+
+            int newX = (int)(originalControlRect.X * xRatio);
+            int newY = (int)(originalControlRect.Y * yRatio);
+
+            int newWidth = (int)(originalControlRect.Width * xRatio);
+            int newHeight = (int)(originalControlRect.Height * yRatio);
+
+            control.Location = new Point(newX, newY);
+            control.Size = new Size(newWidth, newHeight);
+        }
+
+        private void KioskMode_Resize(object sender, EventArgs e)
+        {
+            ResizeChildrenControls();
         }
 
         private void LDBButton_Click(object sender, EventArgs e)
@@ -103,6 +168,6 @@ namespace LockedDownKioskMode
             {
                 ScrollingAnnouncement.Left = this.Width;
             }
-        }
+        } 
     }
 }

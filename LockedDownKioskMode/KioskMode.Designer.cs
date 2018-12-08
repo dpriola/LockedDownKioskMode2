@@ -46,81 +46,82 @@ namespace LockedDownKioskMode
             // 
             // LDBButton
             // 
-            this.LDBButton.Location = new System.Drawing.Point(50, 150);
+            this.LDBButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.LDBButton.Location = new System.Drawing.Point(53, 116);
             this.LDBButton.Name = "LDBButton";
-            this.LDBButton.Size = new System.Drawing.Size(300, 300);
+            this.LDBButton.Size = new System.Drawing.Size(150, 150);
             this.LDBButton.TabIndex = 0;
             this.LDBButton.UseVisualStyleBackColor = true;
             this.LDBButton.Click += new System.EventHandler(this.LDBButton_Click);
             // 
             // WebAdvisorButton
             // 
-            this.WebAdvisorButton.Location = new System.Drawing.Point(400, 150);
+            this.WebAdvisorButton.Location = new System.Drawing.Point(481, 116);
             this.WebAdvisorButton.Name = "WebAdvisorButton";
-            this.WebAdvisorButton.Size = new System.Drawing.Size(300, 300);
+            this.WebAdvisorButton.Size = new System.Drawing.Size(150, 150);
             this.WebAdvisorButton.TabIndex = 1;
             this.WebAdvisorButton.UseVisualStyleBackColor = true;
             this.WebAdvisorButton.Click += new System.EventHandler(this.WebAdvisorButton_Click);
             // 
             // D2LButton
             // 
-            this.D2LButton.Location = new System.Drawing.Point(750, 150);
+            this.D2LButton.Location = new System.Drawing.Point(268, 116);
             this.D2LButton.Name = "D2LButton";
-            this.D2LButton.Size = new System.Drawing.Size(300, 300);
+            this.D2LButton.Size = new System.Drawing.Size(150, 150);
             this.D2LButton.TabIndex = 2;
             this.D2LButton.UseVisualStyleBackColor = true;
             this.D2LButton.Click += new System.EventHandler(this.D2LButton_Click);
             // 
             // WebMailButton
             // 
-            this.WebMailButton.Location = new System.Drawing.Point(1100, 150);
+            this.WebMailButton.Location = new System.Drawing.Point(686, 116);
             this.WebMailButton.Name = "WebMailButton";
-            this.WebMailButton.Size = new System.Drawing.Size(300, 300);
+            this.WebMailButton.Size = new System.Drawing.Size(150, 150);
             this.WebMailButton.TabIndex = 3;
             this.WebMailButton.UseVisualStyleBackColor = true;
             this.WebMailButton.Click += new System.EventHandler(this.WebMailButton_Click);
             // 
             // DSUStudentHomeButton
             // 
-            this.DSUStudentHomeButton.Location = new System.Drawing.Point(50, 540);
+            this.DSUStudentHomeButton.Location = new System.Drawing.Point(52, 284);
             this.DSUStudentHomeButton.Name = "DSUStudentHomeButton";
-            this.DSUStudentHomeButton.Size = new System.Drawing.Size(150, 150);
+            this.DSUStudentHomeButton.Size = new System.Drawing.Size(75, 75);
             this.DSUStudentHomeButton.TabIndex = 4;
             this.DSUStudentHomeButton.UseVisualStyleBackColor = true;
             this.DSUStudentHomeButton.Click += new System.EventHandler(this.DSUStudentHomeButton_Click);
             // 
             // ProctorSignUpButton
             // 
-            this.ProctorSignUpButton.Location = new System.Drawing.Point(350, 540);
+            this.ProctorSignUpButton.Location = new System.Drawing.Point(229, 284);
             this.ProctorSignUpButton.Name = "ProctorSignUpButton";
-            this.ProctorSignUpButton.Size = new System.Drawing.Size(150, 150);
+            this.ProctorSignUpButton.Size = new System.Drawing.Size(75, 75);
             this.ProctorSignUpButton.TabIndex = 5;
             this.ProctorSignUpButton.UseVisualStyleBackColor = true;
             this.ProctorSignUpButton.Click += new System.EventHandler(this.ProctorSignUpButton_Click);
             // 
             // CalcButton
             // 
-            this.CalcButton.Location = new System.Drawing.Point(650, 540);
+            this.CalcButton.Location = new System.Drawing.Point(412, 284);
             this.CalcButton.Name = "CalcButton";
-            this.CalcButton.Size = new System.Drawing.Size(150, 150);
+            this.CalcButton.Size = new System.Drawing.Size(75, 75);
             this.CalcButton.TabIndex = 6;
             this.CalcButton.UseVisualStyleBackColor = true;
             this.CalcButton.Click += new System.EventHandler(this.CalcButton_Click);
             // 
             // DefaultPrinterButton
             // 
-            this.DefaultPrinterButton.Location = new System.Drawing.Point(950, 540);
+            this.DefaultPrinterButton.Location = new System.Drawing.Point(583, 284);
             this.DefaultPrinterButton.Name = "DefaultPrinterButton";
-            this.DefaultPrinterButton.Size = new System.Drawing.Size(150, 150);
+            this.DefaultPrinterButton.Size = new System.Drawing.Size(75, 75);
             this.DefaultPrinterButton.TabIndex = 7;
             this.DefaultPrinterButton.UseVisualStyleBackColor = true;
             this.DefaultPrinterButton.Click += new System.EventHandler(this.DefaultPrinterButton_Click);
             // 
             // AdminLogOutButton
             // 
-            this.AdminLogOutButton.Location = new System.Drawing.Point(1250, 540);
+            this.AdminLogOutButton.Location = new System.Drawing.Point(761, 284);
             this.AdminLogOutButton.Name = "AdminLogOutButton";
-            this.AdminLogOutButton.Size = new System.Drawing.Size(150, 150);
+            this.AdminLogOutButton.Size = new System.Drawing.Size(75, 75);
             this.AdminLogOutButton.TabIndex = 8;
             this.AdminLogOutButton.UseVisualStyleBackColor = true;
             this.AdminLogOutButton.Click += new System.EventHandler(this.AdminLogOutButton_Click);
@@ -145,7 +146,7 @@ namespace LockedDownKioskMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1439, 702);
+            this.ClientSize = new System.Drawing.Size(883, 371);
             this.Controls.Add(this.ScrollingAnnouncement);
             this.Controls.Add(this.AdminLogOutButton);
             this.Controls.Add(this.DefaultPrinterButton);
@@ -159,6 +160,7 @@ namespace LockedDownKioskMode
             this.Name = "KioskMode";
             this.Text = "Kiosk Mode";
             this.Load += new System.EventHandler(this.KioskMode_Load);
+            this.Resize += new System.EventHandler(this.KioskMode_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 
