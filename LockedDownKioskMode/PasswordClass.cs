@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,9 @@ namespace LockedDownKioskMode
 {
     public partial class PasswordClass : Form
     {
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern bool ExitWindowsEx(uint uFlags, uint dwReason);
+
         public PasswordClass()
         {
             InitializeComponent();
@@ -21,7 +25,7 @@ namespace LockedDownKioskMode
         {
             if (passBox.Text == "test")
             {
-                this.Close();
+                ExitWindowsEx(0 | 0x00000004, 0);
             }
             else if (String.IsNullOrEmpty(passBox.Text))
             {
