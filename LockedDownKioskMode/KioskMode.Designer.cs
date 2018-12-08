@@ -31,6 +31,7 @@ namespace LockedDownKioskMode
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KioskMode));
             this.LDBButton = new System.Windows.Forms.Button();
             this.WebAdvisorButton = new System.Windows.Forms.Button();
             this.D2LButton = new System.Windows.Forms.Button();
@@ -42,11 +43,21 @@ namespace LockedDownKioskMode
             this.AdminLogOutButton = new System.Windows.Forms.Button();
             this.ScrollingAnnouncement = new System.Windows.Forms.LinkLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.LDBLabel = new System.Windows.Forms.Label();
+            this.D2LLabel = new System.Windows.Forms.Label();
+            this.WebAdvisorLabel = new System.Windows.Forms.Label();
+            this.WebMailLabel = new System.Windows.Forms.Label();
+            this.DSUStudentLabel = new System.Windows.Forms.Label();
+            this.ProctorLabel = new System.Windows.Forms.Label();
+            this.CalcLabel = new System.Windows.Forms.Label();
+            this.PrinterLabel = new System.Windows.Forms.Label();
+            this.LogoutLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LDBButton
             // 
             this.LDBButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.LDBButton.Image = ((System.Drawing.Image)(resources.GetObject("LDBButton.Image")));
             this.LDBButton.Location = new System.Drawing.Point(53, 116);
             this.LDBButton.Name = "LDBButton";
             this.LDBButton.Size = new System.Drawing.Size(150, 150);
@@ -56,6 +67,7 @@ namespace LockedDownKioskMode
             // 
             // WebAdvisorButton
             // 
+            this.WebAdvisorButton.Image = ((System.Drawing.Image)(resources.GetObject("WebAdvisorButton.Image")));
             this.WebAdvisorButton.Location = new System.Drawing.Point(481, 116);
             this.WebAdvisorButton.Name = "WebAdvisorButton";
             this.WebAdvisorButton.Size = new System.Drawing.Size(150, 150);
@@ -65,6 +77,7 @@ namespace LockedDownKioskMode
             // 
             // D2LButton
             // 
+            this.D2LButton.Image = ((System.Drawing.Image)(resources.GetObject("D2LButton.Image")));
             this.D2LButton.Location = new System.Drawing.Point(268, 116);
             this.D2LButton.Name = "D2LButton";
             this.D2LButton.Size = new System.Drawing.Size(150, 150);
@@ -74,6 +87,7 @@ namespace LockedDownKioskMode
             // 
             // WebMailButton
             // 
+            this.WebMailButton.Image = ((System.Drawing.Image)(resources.GetObject("WebMailButton.Image")));
             this.WebMailButton.Location = new System.Drawing.Point(686, 116);
             this.WebMailButton.Name = "WebMailButton";
             this.WebMailButton.Size = new System.Drawing.Size(150, 150);
@@ -83,16 +97,23 @@ namespace LockedDownKioskMode
             // 
             // DSUStudentHomeButton
             // 
-            this.DSUStudentHomeButton.Location = new System.Drawing.Point(52, 284);
+            this.DSUStudentHomeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.DSUStudentHomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.DSUStudentHomeButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.DSUStudentHomeButton.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSUStudentHomeButton.ForeColor = System.Drawing.Color.FloralWhite;
+            this.DSUStudentHomeButton.Image = ((System.Drawing.Image)(resources.GetObject("DSUStudentHomeButton.Image")));
+            this.DSUStudentHomeButton.Location = new System.Drawing.Point(52, 324);
             this.DSUStudentHomeButton.Name = "DSUStudentHomeButton";
             this.DSUStudentHomeButton.Size = new System.Drawing.Size(75, 75);
             this.DSUStudentHomeButton.TabIndex = 4;
-            this.DSUStudentHomeButton.UseVisualStyleBackColor = true;
+            this.DSUStudentHomeButton.UseVisualStyleBackColor = false;
             this.DSUStudentHomeButton.Click += new System.EventHandler(this.DSUStudentHomeButton_Click);
             // 
             // ProctorSignUpButton
             // 
-            this.ProctorSignUpButton.Location = new System.Drawing.Point(229, 284);
+            this.ProctorSignUpButton.Image = ((System.Drawing.Image)(resources.GetObject("ProctorSignUpButton.Image")));
+            this.ProctorSignUpButton.Location = new System.Drawing.Point(229, 324);
             this.ProctorSignUpButton.Name = "ProctorSignUpButton";
             this.ProctorSignUpButton.Size = new System.Drawing.Size(75, 75);
             this.ProctorSignUpButton.TabIndex = 5;
@@ -101,7 +122,8 @@ namespace LockedDownKioskMode
             // 
             // CalcButton
             // 
-            this.CalcButton.Location = new System.Drawing.Point(412, 284);
+            this.CalcButton.Image = ((System.Drawing.Image)(resources.GetObject("CalcButton.Image")));
+            this.CalcButton.Location = new System.Drawing.Point(410, 324);
             this.CalcButton.Name = "CalcButton";
             this.CalcButton.Size = new System.Drawing.Size(75, 75);
             this.CalcButton.TabIndex = 6;
@@ -110,7 +132,8 @@ namespace LockedDownKioskMode
             // 
             // DefaultPrinterButton
             // 
-            this.DefaultPrinterButton.Location = new System.Drawing.Point(583, 284);
+            this.DefaultPrinterButton.Image = ((System.Drawing.Image)(resources.GetObject("DefaultPrinterButton.Image")));
+            this.DefaultPrinterButton.Location = new System.Drawing.Point(582, 324);
             this.DefaultPrinterButton.Name = "DefaultPrinterButton";
             this.DefaultPrinterButton.Size = new System.Drawing.Size(75, 75);
             this.DefaultPrinterButton.TabIndex = 7;
@@ -119,7 +142,8 @@ namespace LockedDownKioskMode
             // 
             // AdminLogOutButton
             // 
-            this.AdminLogOutButton.Location = new System.Drawing.Point(761, 284);
+            this.AdminLogOutButton.Image = ((System.Drawing.Image)(resources.GetObject("AdminLogOutButton.Image")));
+            this.AdminLogOutButton.Location = new System.Drawing.Point(761, 324);
             this.AdminLogOutButton.Name = "AdminLogOutButton";
             this.AdminLogOutButton.Size = new System.Drawing.Size(75, 75);
             this.AdminLogOutButton.TabIndex = 8;
@@ -142,11 +166,124 @@ namespace LockedDownKioskMode
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // LDBLabel
+            // 
+            this.LDBLabel.AutoSize = true;
+            this.LDBLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LDBLabel.Location = new System.Drawing.Point(49, 269);
+            this.LDBLabel.Name = "LDBLabel";
+            this.LDBLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LDBLabel.Size = new System.Drawing.Size(140, 19);
+            this.LDBLabel.TabIndex = 10;
+            this.LDBLabel.Text = "LockDown Browser";
+            // 
+            // D2LLabel
+            // 
+            this.D2LLabel.AutoSize = true;
+            this.D2LLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D2LLabel.Location = new System.Drawing.Point(299, 269);
+            this.D2LLabel.Name = "D2LLabel";
+            this.D2LLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.D2LLabel.Size = new System.Drawing.Size(80, 19);
+            this.D2LLabel.TabIndex = 11;
+            this.D2LLabel.Text = "D2L Portal";
+            // 
+            // WebAdvisorLabel
+            // 
+            this.WebAdvisorLabel.AutoSize = true;
+            this.WebAdvisorLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WebAdvisorLabel.Location = new System.Drawing.Point(477, 269);
+            this.WebAdvisorLabel.Name = "WebAdvisorLabel";
+            this.WebAdvisorLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.WebAdvisorLabel.Size = new System.Drawing.Size(138, 19);
+            this.WebAdvisorLabel.TabIndex = 12;
+            this.WebAdvisorLabel.Text = "WebAdvisor Portal";
+            // 
+            // WebMailLabel
+            // 
+            this.WebMailLabel.AutoSize = true;
+            this.WebMailLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WebMailLabel.Location = new System.Drawing.Point(694, 269);
+            this.WebMailLabel.Name = "WebMailLabel";
+            this.WebMailLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.WebMailLabel.Size = new System.Drawing.Size(132, 19);
+            this.WebMailLabel.TabIndex = 13;
+            this.WebMailLabel.Text = "Outlook Web App";
+            // 
+            // DSUStudentLabel
+            // 
+            this.DSUStudentLabel.AutoSize = true;
+            this.DSUStudentLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSUStudentLabel.Location = new System.Drawing.Point(25, 402);
+            this.DSUStudentLabel.Name = "DSUStudentLabel";
+            this.DSUStudentLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.DSUStudentLabel.Size = new System.Drawing.Size(140, 19);
+            this.DSUStudentLabel.TabIndex = 14;
+            this.DSUStudentLabel.Text = "DSU Student Home";
+            this.DSUStudentLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ProctorLabel
+            // 
+            this.ProctorLabel.AutoSize = true;
+            this.ProctorLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProctorLabel.Location = new System.Drawing.Point(211, 402);
+            this.ProctorLabel.Name = "ProctorLabel";
+            this.ProctorLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ProctorLabel.Size = new System.Drawing.Size(112, 19);
+            this.ProctorLabel.TabIndex = 15;
+            this.ProctorLabel.Text = "Proctor Signup";
+            this.ProctorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CalcLabel
+            // 
+            this.CalcLabel.AutoSize = true;
+            this.CalcLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalcLabel.Location = new System.Drawing.Point(406, 402);
+            this.CalcLabel.Name = "CalcLabel";
+            this.CalcLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CalcLabel.Size = new System.Drawing.Size(78, 19);
+            this.CalcLabel.TabIndex = 16;
+            this.CalcLabel.Text = "Calculator";
+            this.CalcLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PrinterLabel
+            // 
+            this.PrinterLabel.AutoSize = true;
+            this.PrinterLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrinterLabel.Location = new System.Drawing.Point(538, 402);
+            this.PrinterLabel.Name = "PrinterLabel";
+            this.PrinterLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.PrinterLabel.Size = new System.Drawing.Size(165, 19);
+            this.PrinterLabel.TabIndex = 17;
+            this.PrinterLabel.Text = "Change Default Printer";
+            this.PrinterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LogoutLabel
+            // 
+            this.LogoutLabel.AutoSize = true;
+            this.LogoutLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoutLabel.Location = new System.Drawing.Point(746, 402);
+            this.LogoutLabel.Name = "LogoutLabel";
+            this.LogoutLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LogoutLabel.Size = new System.Drawing.Size(106, 19);
+            this.LogoutLabel.TabIndex = 18;
+            this.LogoutLabel.Text = "Admin Logout";
+            this.LogoutLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // KioskMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 371);
+            this.ClientSize = new System.Drawing.Size(883, 466);
+            this.Controls.Add(this.LogoutLabel);
+            this.Controls.Add(this.PrinterLabel);
+            this.Controls.Add(this.CalcLabel);
+            this.Controls.Add(this.ProctorLabel);
+            this.Controls.Add(this.DSUStudentLabel);
+            this.Controls.Add(this.WebMailLabel);
+            this.Controls.Add(this.WebAdvisorLabel);
+            this.Controls.Add(this.D2LLabel);
+            this.Controls.Add(this.LDBLabel);
             this.Controls.Add(this.ScrollingAnnouncement);
             this.Controls.Add(this.AdminLogOutButton);
             this.Controls.Add(this.DefaultPrinterButton);
@@ -195,6 +332,15 @@ namespace LockedDownKioskMode
 
         private LinkLabel ScrollingAnnouncement;
         private Timer timer1;
+        private Label LDBLabel;
+        private Label D2LLabel;
+        private Label WebAdvisorLabel;
+        private Label WebMailLabel;
+        private Label DSUStudentLabel;
+        private Label ProctorLabel;
+        private Label CalcLabel;
+        private Label PrinterLabel;
+        private Label LogoutLabel;
     }
 }
 

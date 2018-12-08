@@ -29,6 +29,16 @@ namespace LockedDownKioskMode
 
         private Rectangle BannerRect;
 
+        private Rectangle LDBLabelRect;
+        private Rectangle WebAdvisorLabelRect;
+        private Rectangle D2LLabelRect;
+        private Rectangle WebMailLabelRect;
+        private Rectangle DSUStudentLabelRect;
+        private Rectangle ProctorLabelRect;
+        private Rectangle CalcLabelRect;
+        private Rectangle PrinterLabelRect;
+        private Rectangle LogOutLabelRect;
+
         private Size formOriginalSize;
 
 
@@ -55,6 +65,17 @@ namespace LockedDownKioskMode
 
             BannerRect = new Rectangle(ScrollingAnnouncement.Location.X, ScrollingAnnouncement.Location.Y, ScrollingAnnouncement.Width, ScrollingAnnouncement.Height);
 
+            LDBLabelRect = new Rectangle(LDBButton.Location.X, LDBButton.Location.Y, LDBButton.Width, LDBButton.Height);
+            WebAdvisorLabelRect = new Rectangle(WebAdvisorButton.Location.X, WebAdvisorButton.Location.Y, WebAdvisorButton.Width, WebAdvisorButton.Height);
+            D2LLabelRect = new Rectangle(D2LButton.Location.X, D2LButton.Location.Y, D2LButton.Width, D2LButton.Height);
+            WebMailLabelRect = new Rectangle(WebMailButton.Location.X, WebMailButton.Location.Y, WebMailButton.Width, WebMailButton.Height);
+            DSUStudentLabelRect = new Rectangle(DSUStudentHomeButton.Location.X, DSUStudentHomeButton.Location.Y, DSUStudentHomeButton.Width, DSUStudentHomeButton.Height);
+            ProctorLabelRect = new Rectangle(ProctorSignUpButton.Location.X, ProctorSignUpButton.Location.Y, ProctorSignUpButton.Width, ProctorSignUpButton.Height);
+            CalcLabelRect = new Rectangle(CalcButton.Location.X, CalcButton.Location.Y, CalcButton.Width, CalcButton.Height);
+            PrinterLabelRect = new Rectangle(DefaultPrinterButton.Location.X, DefaultPrinterButton.Location.Y, DefaultPrinterButton.Width, DefaultPrinterButton.Height);
+            LogOutLabelRect = new Rectangle(AdminLogOutButton.Location.X, AdminLogOutButton.Location.Y, AdminLogOutButton.Width, AdminLogOutButton.Height);
+
+
             timer1.Enabled = true;
             LockDownClass LDC = new LockDownClass();
             LDC.main();
@@ -73,6 +94,16 @@ namespace LockedDownKioskMode
             ResizeControl(AdminLogOutButtonRect, AdminLogOutButton);
 
             ResizeControl(BannerRect, ScrollingAnnouncement);
+
+            ResizeControl(LDBLabelRect, LDBLabel);
+            ResizeControl(WebAdvisorLabelRect, WebAdvisorLabel);
+            ResizeControl(D2LLabelRect, D2LLabel);
+            ResizeControl(WebMailLabelRect, WebMailLabel);
+            ResizeControl(DSUStudentLabelRect, DSUStudentLabel);
+            ResizeControl(ProctorLabelRect, ProctorLabel);
+            ResizeControl(CalcLabelRect, CalcLabel);
+            ResizeControl(PrinterLabelRect, PrinterLabel);
+            ResizeControl(LogOutLabelRect, LogoutLabel);
         }
 
         private void ResizeControl(Rectangle originalControlRect, Control control)
@@ -168,6 +199,6 @@ namespace LockedDownKioskMode
             {
                 ScrollingAnnouncement.Left = this.Width;
             }
-        } 
+        }
     }
 }
