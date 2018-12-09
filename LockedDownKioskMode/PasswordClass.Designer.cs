@@ -2,15 +2,15 @@
 {
     partial class PasswordClass
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+        //Global Variables
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        private System.Windows.Forms.TextBox passBox;
+        private System.Windows.Forms.Label PasswordLabel;
+        private System.Windows.Forms.Button OkButton;
+        private System.Windows.Forms.Button CancelButton;
+
+        //Disposing Method
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -19,17 +19,12 @@
             }
             base.Dispose(disposing);
         }
-
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.passBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.PasswordLabel = new System.Windows.Forms.Label();
             this.OkButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,15 +38,15 @@
             this.passBox.TabIndex = 0;
             this.passBox.Enter += new System.EventHandler(this.OkButton_Click);
             // 
-            // label1
+            // PasswordLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(62, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Enter Admin Password:";
+            this.PasswordLabel.AutoSize = true;
+            this.PasswordLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordLabel.Location = new System.Drawing.Point(62, 23);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(168, 19);
+            this.PasswordLabel.TabIndex = 1;
+            this.PasswordLabel.Text = "Enter Admin Password:";
             // 
             // OkButton
             // 
@@ -80,7 +75,7 @@
             this.ClientSize = new System.Drawing.Size(355, 109);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.OkButton);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.PasswordLabel);
             this.Controls.Add(this.passBox);
             this.Name = "PasswordClass";
             this.Text = "PasswordClass";
@@ -88,12 +83,6 @@
             this.PerformLayout();
 
         }
-
         #endregion
-
-        private System.Windows.Forms.TextBox passBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button OkButton;
-        private System.Windows.Forms.Button CancelButton;
     }
 }

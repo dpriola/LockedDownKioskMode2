@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
 namespace LockedDownKioskMode
 {
     public class Taskbar
     {
+        //Global Variables Here
         [DllImport("user32.dll")]
         private static extern int FindWindow(string className, string windowText);
 
@@ -42,11 +38,7 @@ namespace LockedDownKioskMode
             }
         }
 
-        private Taskbar()
-        {
-            // hide ctor
-        }
-
+        //Call Either of these to Show or Hide the Taskbar
         public static void Show()
         {
             ShowWindow(Handle, SW_SHOW);

@@ -2,15 +2,14 @@
 {
     partial class DefaultPrinter
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+        //Global Variables Here
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        private System.Windows.Forms.Button CurrentDefaultButton;
+        private System.Windows.Forms.Button SetDefaultButton;
+        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.ListBox PrinterListBox;
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +21,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.CurrentDefaultButton = new System.Windows.Forms.Button();
@@ -86,12 +81,6 @@
             this.ResumeLayout(false);
 
         }
-
         #endregion
-
-        private System.Windows.Forms.Button CurrentDefaultButton;
-        private System.Windows.Forms.Button SetDefaultButton;
-        private System.Windows.Forms.Button CloseButton;
-        private System.Windows.Forms.ListBox PrinterListBox;
     }
 }

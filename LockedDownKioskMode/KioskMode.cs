@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 
@@ -41,16 +35,19 @@ namespace LockedDownKioskMode
 
         private Size formOriginalSize;
 
-
-
+        //Constructors Here
         public KioskMode()
         {
             InitializeComponent();
-            
         }
 
+        //Class Methods
         private void KioskMode_Load(object sender, EventArgs e)
         {
+            timer1.Enabled = true;
+            LockDownClass LDC = new LockDownClass();
+            LDC.main();
+
             formOriginalSize = this.Size;
 
             LDBButtonRect = new Rectangle(LDBButton.Location.X, LDBButton.Location.Y, LDBButton.Width, LDBButton.Height);
@@ -74,11 +71,6 @@ namespace LockedDownKioskMode
             CalcLabelRect = new Rectangle(CalcButton.Location.X, CalcButton.Location.Y, CalcButton.Width, CalcButton.Height);
             PrinterLabelRect = new Rectangle(DefaultPrinterButton.Location.X, DefaultPrinterButton.Location.Y, DefaultPrinterButton.Width, DefaultPrinterButton.Height);
             LogOutLabelRect = new Rectangle(AdminLogOutButton.Location.X, AdminLogOutButton.Location.Y, AdminLogOutButton.Width, AdminLogOutButton.Height);
-
-
-            timer1.Enabled = true;
-            LockDownClass LDC = new LockDownClass();
-            LDC.main();
         }
 
         private void ResizeChildrenControls()
@@ -126,6 +118,7 @@ namespace LockedDownKioskMode
             ResizeChildrenControls();
         }
 
+        //Button Click Methods
         private void LDBButton_Click(object sender, EventArgs e)
         {
             Program = new ProcessStartInfo("C:\\Program Files (x86)\\Respondus\\LockDown Browser\\LockDownBrowser.exe");
@@ -180,6 +173,7 @@ namespace LockedDownKioskMode
             DialogResult dialogResult = al.ShowDialog();
         }
 
+        //Scrolling Annoucement Method
         private void ScrollingAnnouncement_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://dsu.edu/");
@@ -192,6 +186,7 @@ namespace LockedDownKioskMode
             ScrollingAnnouncement.DisabledLinkColor = Color.Gray;
         }
 
+        //Method Controls Scrolling Annoucement
         private void timer1_Tick(object sender, EventArgs e)
         {
             ScrollingAnnouncement.Left = ScrollingAnnouncement.Left + 5;

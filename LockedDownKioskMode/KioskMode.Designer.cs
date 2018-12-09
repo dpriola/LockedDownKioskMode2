@@ -4,15 +4,21 @@ namespace LockedDownKioskMode
 {
     partial class KioskMode
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+        //Global Variables Here
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        private LinkLabel ScrollingAnnouncement;
+        private Timer timer1;
+        private Label LDBLabel;
+        private Label D2LLabel;
+        private Label WebAdvisorLabel;
+        private Label WebMailLabel;
+        private Label DSUStudentLabel;
+        private Label ProctorLabel;
+        private Label CalcLabel;
+        private Label PrinterLabel;
+        private Label LogoutLabel;
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,10 +30,6 @@ namespace LockedDownKioskMode
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -301,6 +303,7 @@ namespace LockedDownKioskMode
             this.ResumeLayout(false);
             this.PerformLayout();
 
+            GoFullscreen(true);
         }
 
         #endregion
@@ -315,6 +318,7 @@ namespace LockedDownKioskMode
         private System.Windows.Forms.Button DefaultPrinterButton;
         private System.Windows.Forms.Button AdminLogOutButton;
 
+        //Forces Kiosk to Go Full Screen
         private void GoFullscreen(bool fullscreen)
         {
             if (fullscreen)
@@ -329,18 +333,6 @@ namespace LockedDownKioskMode
                 this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
             }
         }
-
-        private LinkLabel ScrollingAnnouncement;
-        private Timer timer1;
-        private Label LDBLabel;
-        private Label D2LLabel;
-        private Label WebAdvisorLabel;
-        private Label WebMailLabel;
-        private Label DSUStudentLabel;
-        private Label ProctorLabel;
-        private Label CalcLabel;
-        private Label PrinterLabel;
-        private Label LogoutLabel;
     }
 }
 
