@@ -53,7 +53,7 @@ namespace LockedDownKioskMode
         public void main()
         {
             KeyboardHook(this);
-            
+
             /*
             RegistryKey key1 = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64);
             key1 = key1.OpenSubKey(@"Software\Microsoft\Windows NT\CurrentVersion\Winlogon", true);
@@ -95,6 +95,17 @@ namespace LockedDownKioskMode
             key5.SetValue("NoLogoff", 1);
             key5.Close();
             */
+            RegistryKey key6 = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64);
+            key6 = key6.CreateSubKey(@"Software\Policies\Microsoft\Internet Explorer\Toolbars\Restrictions", true);
+            
+            key6.SetValue("NoNavBar", 1);
+            key6.Close();
+
+            RegistryKey key7 = RegistryKey.OpenBaseKey(RegistryHive.CurrentUser, RegistryView.Registry64);
+            key7 = key6.CreateSubKey(@"Software\Policies\Microsoft\Internet Explorer\Toolbars\Restrictions", true);
+
+            key7.SetValue("NoCommandBar", 1);
+            key7.Close();
 
             /*
             string root = @"C:\Users\Setup\AppData\Local\Microsoft\Windows\WinX";

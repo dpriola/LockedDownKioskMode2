@@ -57,6 +57,7 @@
     <Compile Include="DefaultPrinter.Designer.cs">
       <DependentUpon>DefaultPrinter.cs</DependentUpon>
     </Compile>
+    <Compile Include="ErrorClass.cs" />
     <Compile Include="KioskMode.cs">
       <SubType>Form</SubType>
     </Compile>
