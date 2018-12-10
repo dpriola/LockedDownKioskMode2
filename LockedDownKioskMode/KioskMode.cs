@@ -39,6 +39,7 @@ namespace LockedDownKioskMode
         public KioskMode()
         {
             InitializeComponent();
+            this.ControlBox = false;
         }
 
         //Class Methods
@@ -71,6 +72,10 @@ namespace LockedDownKioskMode
             CalcLabelRect = new Rectangle(CalcButton.Location.X, CalcButton.Location.Y, CalcButton.Width, CalcButton.Height);
             PrinterLabelRect = new Rectangle(DefaultPrinterButton.Location.X, DefaultPrinterButton.Location.Y, DefaultPrinterButton.Width, DefaultPrinterButton.Height);
             LogOutLabelRect = new Rectangle(AdminLogOutButton.Location.X, AdminLogOutButton.Location.Y, AdminLogOutButton.Width, AdminLogOutButton.Height);
+
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+            FormBorderStyle = FormBorderStyle.None;
         }
 
         private void ResizeChildrenControls()

@@ -302,8 +302,6 @@ namespace LockedDownKioskMode
             this.Resize += new System.EventHandler(this.KioskMode_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
-
-            GoFullscreen(true);
         }
 
         #endregion
@@ -317,22 +315,6 @@ namespace LockedDownKioskMode
         private System.Windows.Forms.Button CalcButton;
         private System.Windows.Forms.Button DefaultPrinterButton;
         private System.Windows.Forms.Button AdminLogOutButton;
-
-        //Forces Kiosk to Go Full Screen
-        private void GoFullscreen(bool fullscreen)
-        {
-            if (fullscreen)
-            {
-                this.WindowState = FormWindowState.Maximized;
-                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-                this.Bounds = Screen.PrimaryScreen.Bounds;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
-            }
-        }
     }
 }
 
