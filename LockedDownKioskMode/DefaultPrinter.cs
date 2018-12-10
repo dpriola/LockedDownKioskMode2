@@ -8,7 +8,9 @@ namespace LockedDownKioskMode
     public partial class DefaultPrinter : Form
     {
         //Global Variables Here
-        private ListBox.SelectedObjectCollection ListBoxSelections;
+        private ListBox.SelectedObjectCollection PrinterBox;
+
+        DialogResult message;
 
         //Constructors Here
         public DefaultPrinter()
@@ -23,29 +25,29 @@ namespace LockedDownKioskMode
             PrinterSettings settings = new PrinterSettings();
             if (settings.PrinterName != null)
             {
-                DialogResult newDefault = MessageBox.Show("Default Printer is Currently: " + settings.PrinterName);
+                message = MessageBox.Show("Default Printer is Currently: " + settings.PrinterName);
             }
             else
             {
-                DialogResult newDefault = MessageBox.Show("No Default Printer Currently Set.");
+                message = MessageBox.Show("No Default Printer Currently Set.");
             }
         }
 
         private void SetDefaultButton_Click(object sender, EventArgs e)
         {
-            ListBoxSelections = new ListBox.SelectedObjectCollection(PrinterListBox);
-            ListBoxSelections = PrinterListBox.SelectedItems;
+            PrinterBox = new ListBox.SelectedObjectCollection(PrinterListBox);
+            PrinterBox = PrinterListBox.SelectedItems;
 
-            if (ListBoxSelections.Count == 0)
+            if (PrinterBox.Count == 0)
             {
-                DialogResult newDefault1 = MessageBox.Show("No Default Printer Selected. Try Again.");
+                message = MessageBox.Show("No Default Printer Selected. Try Again.");
             }
             else
             {
                 string printerName = PrinterListBox.SelectedItem.ToString();
                 PrinterList.SetDefaultPrinter(printerName);
 
-                DialogResult newDefault = MessageBox.Show("Default Printer is now: " + printerName);
+                message = MessageBox.Show("Default Printer is now: " + printerName);
             }
         }
 
