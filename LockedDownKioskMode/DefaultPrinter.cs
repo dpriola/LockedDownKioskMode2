@@ -43,7 +43,7 @@ namespace LockedDownKioskMode
             else
             {
                 string printerName = PrinterListBox.SelectedItem.ToString();
-                myPrinters.SetDefaultPrinter(printerName);
+                PrinterList.SetDefaultPrinter(printerName);
 
                 DialogResult newDefault = MessageBox.Show("Default Printer is now: " + printerName);
             }
@@ -65,7 +65,7 @@ namespace LockedDownKioskMode
     }
 
     //Class for calling Printer Settings
-    public static class myPrinters
+    public static class PrinterList
     {
         [DllImport("winspool.drv", CharSet = CharSet.Auto, SetLastError = true)]
         public static extern bool SetDefaultPrinter(string Name);
